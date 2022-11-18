@@ -20,7 +20,7 @@ xlim([0 0.01]) % limit the x-axis
 title('Continuous Time Sinusoid x(t) (500Hz)')
 xlabel('time (seconds)')
 ylabel('amplitude')
-legend('x(t)')
+legend('x(t)', 'Location', 'eastoutside', 'Box', 'off')
 grid on
 
 subplot(5, 1, 2) % subplot 1
@@ -29,7 +29,7 @@ xlim([0 0.01]) % limit the x-axis
 title('Continuous Time Sinusoid x2(t) (1000Hz)')
 xlabel('time (seconds)')
 ylabel('amplitude')
-legend('x2(t)')
+legend('x2(t)', 'Location', 'eastoutside', 'Box', 'off')
 grid on
 
 subplot(5, 1, 3) % subplot 1
@@ -38,7 +38,7 @@ xlim([0 0.01]) % limit the x-axis
 title('Continuous Time Sinusoids x(t) + x2(t) (500Hz + 1000Hz)')
 xlabel('time (seconds)')
 ylabel('amplitude')
-legend('x(t) + x2(t)')
+legend('x(t) + x2(t)', 'Location', 'eastoutside', 'Box', 'off')
 
 
 % hold on
@@ -62,7 +62,7 @@ grid on
 title('Sampled Sinusoids x[n] + x2[n] (500Hz + 1000Hz)')
 xlabel('samples (n)')
 ylabel('amplitude')
-legend('x(t) + x2(t)', 'x[n] + x2[n]')
+legend('x(t) + x2(t)', 'x[n] + x2[n]', 'Location', 'eastoutside', 'Box', 'off')
 xlim([0 0.01]) % limit the x-axis 
 % sound(x_n)
 
@@ -78,7 +78,7 @@ grid on
 title('Reconstructed Sinusoids x[n] + x2[n] (500Hz + 1000Hz)')
 xlabel('time (seconds)')
 ylabel('amplitude')
-legend('x(t) + x2(t)')
+legend('x(t) + x2(t)', 'Location', 'eastoutside', 'Box', 'off')
 xlim([0 0.01]) %limit x-axis
 % sound(x_n)
 

@@ -18,7 +18,7 @@ xlim([0 0.01]) % limit the x-axis
 title('Continuous Time Sinusoid x(t) (500Hz)')
 xlabel('time (s)')
 ylabel('amplitude')
-legend('x(t)')
+legend('x(t)', 'Location', 'eastoutside', 'Box', 'off')
 grid on
 % hold on
 
@@ -40,7 +40,7 @@ grid on
 title('Sampled Sinusoid x[n] (500Hz)')
 xlabel('n')
 ylabel('amplitude')
-legend('x(t)', 'x[n]')
+legend('x(t)', 'x[n]', 'Location', 'eastoutside', 'Box', 'off')
 % sound(x_n)
 
 %% reconstruction
@@ -55,7 +55,7 @@ grid on
 title('Reconstructed Sinusoid x[n] (500Hz)')
 xlabel('time (s)')
 ylabel('amplitude')
-legend('x(t)')
+legend('x(t)', 'Location', 'eastoutside', 'Box', 'off')
 xlim([0 0.01]) %limit x-axis
 % sound(x_n)
 
